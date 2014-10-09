@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>Apache Wicket Quickstart</title>
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet'
+          type='text/css'/>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet"/>
+</head>
+<body>
+<form wicket:id="form">
+    <table class="formTable boxTable">
+
+        <tr>
+            <th>
+                Name
+            </th>
+            <td>
+                <input type="text" wicket:id="name"/>
+            </td>
+        </tr>
+
+        <tr>
+            <th>
+                Country
+            </th>
+            <td>
+                <input wicket:id="country" type="hidden" class="select2-choice-text" style="width:26em"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <a wicket:id="clearLink">
+                    <span wicket:id="clearLabel">[Clear]</span>
+                </a>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
